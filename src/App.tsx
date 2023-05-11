@@ -1,10 +1,10 @@
-import { Text, View, StyleSheet } from 'react-native';
-import styled from "styled-components/native"
+import { StyleSheet, Text, View } from 'react-native';
+import styled from 'styled-components/native';
 
 const TextNew = styled.Text`
-    font-size: 24px;
-    color: blue;
-`
+  font-size: 24px;
+  color: blue;
+`;
 
 const App = () => {
   return (
@@ -16,9 +16,9 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-    container: {
-        color: 'red'
-    }
-})
+  container: {
+    color: 'red',
+  },
+});
 
 export default App;
