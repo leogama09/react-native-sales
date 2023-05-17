@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { theme } from '../../themes/theme';
 
 interface ButtonContainerProps {
   margin: string;
@@ -11,5 +12,9 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonContainerProps>`
   justify-content: center;
   align-items: center;
   ${(props) => (props.margin ? `margin: ${props.margin};` : '')}
-  background-color: blue;
+`;
+
+export const ButtonSecondary = styled(ButtonContainer)<ButtonContainerProps>`
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')}
+  background-color: ${theme.colors.neutralTheme.white};
 `;
